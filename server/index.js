@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const keyRouter = require ("./routes/key");
+const cors = require('cors');
+
+app.use(cors());
 
 const db = require('./models');
 
